@@ -11,7 +11,7 @@ export default defineConfig({
     // This keeps the Gemini API key securely on the server and avoids CORS issues.
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://webxr-stem-learning-platform.onrender.com',
         changeOrigin: true,
         secure: false,
       },
