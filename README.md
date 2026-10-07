@@ -20,7 +20,6 @@
 - **Express.js** - REST API framework
 - **MongoDB & Mongoose** - Database and Object Data Modeling (ODM)
 - **CORS & Dotenv** - Cross-origin resource sharing & configuration management
-- **Google Gemini API** *(Prepared)* - AI tutor & generative STEM assistance
 
 ---
 
@@ -119,11 +118,8 @@ Configure your keys when ready:
 PORT=5000
 CLIENT_URL=http://localhost:5173
 MONGODB_URI=mongodb://127.0.0.1:27017/webxr
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-> **Security Note:** Never commit `.env` files to git. API keys should always remain on the backend and in ignored `.env` files.
 
----
+```
 
 ### Step 3: Running the Application
 
@@ -143,15 +139,10 @@ In a second terminal:
 cd server
 npm run dev
 ```
-The API will run on [http://localhost:5000](http://localhost:5000).
-Check health at: [http://localhost:5000/api/health](http://localhost:5000/api/health).
-
----
 
 ## 🧭 Next Steps
 Now that the project foundation is verified and ready, subsequent development phases will include:
 1. User Authentication & Profile Models
 2. Interactive 3D Simulation Modules (Physics, Chemistry, Biology)
-3. Gemini AI Tutor integration on the backend
-4. Interactive STEM quizzes & progress tracking
-5. WebXR device/VR mode integration
+3. Interactive STEM quizzes & progress tracking
+4. WebXR device/VR mode integration
